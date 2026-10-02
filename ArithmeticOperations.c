@@ -13,7 +13,12 @@ int main(){
     } else {
         printf("Division: Cannot divide by zero\n");
     }
+<<<<<<< HEAD
     printf("exponentiation: %.2f\n", pow(a, b));
     
+=======
+    printf("Modulus: %d\n", a % b);
+ 
+>>>>>>> main
     return 0;
 }
