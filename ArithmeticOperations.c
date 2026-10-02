@@ -12,6 +12,7 @@ int main(){
     } else {
         printf("Division: Cannot divide by zero\n");
     }
-    
+    printf("Modulus: %d\n", a % b);
+ 
     return 0;
 }
