@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<math.h>
 int main(){
     int a, b;
     printf("Enter two numbers: ");
@@ -12,6 +13,7 @@ int main(){
     } else {
         printf("Division: Cannot divide by zero\n");
     }
+    printf("exponentiation: %.2f\n", pow(a, b));
     
     return 0;
 }
