@@ -10,5 +10,6 @@ int main(){
         }
         printf("\n");
     }
+    printf("Floyd's Triangle of %d rows is generated successfully.\n", n);
     return 0;
 }
