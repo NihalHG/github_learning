@@ -10,6 +10,5 @@ int main(){
         }
         printf("\n");
     }
-    printf("Thank you");
     return 0;
 }
