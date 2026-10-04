@@ -137,13 +137,15 @@ int main(){
     float variance=(sqsum/n)-(mean*mean);
     float stdvar=sqrt(variance);
     printf("Standard deviation of the class: %.2f\n", stdvar);
-    float gradeAplus=mean+2*stdvar;
+    float z;
+    printf("\n\nEnter the z value for A+ grade such that gradeAplus=mean+z*stdvar:\n");
+    scanf("%f", &z);
+    float gradeAplus=mean+z*stdvar;
     printf("Total marks required for A+ grade: %.2f\n", gradeAplus);
     int AplusCount=0;
     for(i=0;i<n;i++){
         if(s[i].total>=gradeAplus){
             AplusCount++;
-            
         }
     }
 
