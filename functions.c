@@ -5,6 +5,7 @@ int reverse(int);
 int ispalindrome(int);
 int numberofdigits(int);
 int digitsum(int);
+int isnegative(int);
 int main(){
     int n,choice,x;
     
@@ -16,7 +17,9 @@ int main(){
             "3-reverse the number,\n"
             "4-palindrome or not,\n"
             "5-find number of digits,\n"
-            "6-sum of digits and enter -1 to stop\n");
+            "6-sum of digits\n"
+            "7-check if the number is negative\n"
+            "and enter -1 to stop\n");
         scanf("%d",&choice);
         if(n==-1){
             printf("\n\nThank you\n");
@@ -50,7 +53,13 @@ int main(){
         }
         else if(choice==6){
             x=digitsum(n);
-            printf("The sum of digits of %d is : %d \n");
+            printf("The sum of digits of %d is : %d \n",n,x);
+        }
+        else if(choice==7){
+            if(isnegative(n))
+                printf("The number %d is negative.\n",n);
+            else
+                printf("The number %d is not negative.\n",n);
         }
         else
             printf("wrong input");
@@ -114,4 +123,10 @@ int digitsum(int a){
         x=x/10;
     }
     return sum;
+}
+
+int isnegative(int a){
+    if(a<0)
+      return 1;
+    return 0;
 }
